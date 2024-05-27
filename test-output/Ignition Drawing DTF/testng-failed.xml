@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ignition Drawing DTF]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.dtf.qa.listener.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="IGD testcases(failed)">
+    <classes>
+      <class name="com.dtf.qa.testcases.Login">
+        <methods>
+          <include name="verifyLoginWithInValidCred"/>
+          <include name="verifyLoginWithValidCredWithData" invocation-numbers="0 2"/>
+          <include name="setUp"/>
+          <include name="browserclose"/>
+          <include name="verifyLoginWithExcelData"/>
+        </methods>
+      </class> <!-- com.dtf.qa.testcases.Login -->
+    </classes>
+  </test> <!-- IGD testcases(failed) -->
+</suite> <!-- Failed suite [Ignition Drawing DTF] -->
